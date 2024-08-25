@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>   
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">   
+
+        <header class="header">
+            <h1 class="titulo">Encriptador de texto - Alura</h1>
+        </header>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="mensaje">
+                <img class="btn-consejo" src="img/signo-de-exclamacion.png" alt="Consejo">
+                <p class="mensaje-alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id="encryptBtn" onclick="encryptText()">Encriptar</button>
+                <button id="decryptBtn" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div class="output-container">
+                <img class="btn-astronauta" src="img/—Pngtree—cosmic sky astronaut_5420859.png" alt="Output Image">
+                <p id="outputText">Ningún mensaje fue encontrado</p>
+                <button class="copyBtn" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+<footer class="footer">
+    <p>Creado por Feli - Alura</p>
+</footer>
+</html>
